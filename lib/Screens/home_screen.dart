@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_api/Screens/news_builder.dart';
-
-import 'package:news_api/Shared/component/news_card.dart';
 import 'package:news_api/Shared/component/news_category.dart';
-
-import 'package:news_api/models/news_model.dart';
-
 import 'category_details.dart';
 
 
@@ -21,13 +16,14 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white54,
-        title: const Row(
+        title:  Row(
           mainAxisAlignment: MainAxisAlignment.center,
            children: [
              Text("News",style:TextStyle(color: Colors.orange,fontSize: 30,fontWeight: FontWeight.bold)),
              Text("App",style:TextStyle(color: Colors.blueGrey,fontSize: 30,fontWeight: FontWeight.bold)),
            ],
         ),
+        centerTitle: true,
       ),
       backgroundColor: Colors.white60,
       body: Column(

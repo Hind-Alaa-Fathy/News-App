@@ -64,7 +64,7 @@ class NewsCard extends StatelessWidget {
                 child: Center(child: Text(newsModel[index].title??"[Removed]",style: const TextStyle(fontSize: 30,color: Colors.black,),maxLines: 2,overflow: TextOverflow.ellipsis,)),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 20),
+                padding: const EdgeInsets.only(left: 20,top: 10),
                 child: Center(child: Text(newsModel[index].description??"[Removed]",style: TextStyle(fontSize: 20,color: Colors.grey[700],overflow:TextOverflow.ellipsis),maxLines: 3,)),
               ),
                Padding(

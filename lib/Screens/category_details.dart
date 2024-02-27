@@ -12,11 +12,11 @@ class CategoryDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white60,
+      backgroundColor: Colors.white70,
       appBar: AppBar(
         backgroundColor: Colors.white38,
-        title: Text(category,
-            style: const TextStyle(color: Colors.blueGrey, fontSize: 30)),
+        title: Text(category, style: const TextStyle(color: Colors.blueGrey, fontSize: 30)),
+        centerTitle: true,
       ),
       body: BlocProvider(
         create: (context) => NewsCubit()..getNews(category),
